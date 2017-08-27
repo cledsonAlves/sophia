@@ -1,2 +1,0 @@
-# sophia
-Estrela Sophia
