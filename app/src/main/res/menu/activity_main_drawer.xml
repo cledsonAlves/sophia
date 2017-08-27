@@ -4,32 +4,63 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/account_card_details"
             android:title="Dados da Sophia" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_local_pharmacy_black_24dp"
             android:title="Saude" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
             android:title="Comer comer" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_child_care_black_24dp"
             android:title="Atividades" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Estrelinha Sophia">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/book_open_page_variant"
                 android:title="Cantinho da leitura" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/trending_up"
                 android:title="Curva de aprendizado" />
+
+        </menu>
+    </item>
+    <item android:title="Interatividade">
+        <menu>
+
+            <item
+                android:id="@+id/nav_fotos"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Galeria de Fotos" />
+
+            <item
+                android:id="@+id/nav_videos"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Galeria de Videos" />
+
+            <item
+                android:id="@+id/nav_audios"
+                android:icon="@drawable/music_circle"
+                android:title="Galeria de audios" />
+
+        </menu>
+    </item>
+
+    <item android:title="Olha a Sophia">
+        <menu>
+            <item
+                android:id="@+id/nav_gostos"
+                android:icon="@drawable/ic_child_care_black_24dp"
+                android:title="Gostos da Sophia" />
+
         </menu>
     </item>
 
