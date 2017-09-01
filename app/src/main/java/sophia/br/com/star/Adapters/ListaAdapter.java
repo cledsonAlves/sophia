@@ -38,9 +38,9 @@ public class ListaAdapter  extends RecyclerView.Adapter<ListaAdapter.MyViewHolde
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        holder.nome.setText("a");
-        holder.sobrenome.setText("b");
-        holder.idade.setText("20");
+        holder.nome.setText(mlist.get(position).getNome());
+        holder.sobrenome.setText(mlist.get(position).getSobrenome());
+        holder.idade.setText(mlist.get(position).getIdade());
     }
 
     @Override
