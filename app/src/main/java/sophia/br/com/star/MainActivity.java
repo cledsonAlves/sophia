@@ -3,6 +3,8 @@ package sophia.br.com.star;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +15,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import sophia.br.com.star.Adapters.ListaAdapter;
+import sophia.br.com.star.Enties.Pessoa;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private RecyclerView.LayoutManager mLayoutManager;
+    private RecyclerView.Adapter mAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +52,33 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+      RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
+    rv.setHasFixedSize(true);
+        mLayoutManager = new LinearLayoutManager(this);
+        rv.setLayoutManager(mLayoutManager);
+
+        /** TODO Mock **/
+       Pessoa p = new Pessoa();
+        p.setNome("Sophia");
+        p.setIdade("1 ano");
+        p.setSobrenome("Alves");
+
+        List<Pessoa> lista = new ArrayList<Pessoa>();
+
+        for (int i =0; i < 10; i++){
+            p.setNome(p.getNome()+" - "+ i);
+          lista.add(p);
+        }
+
+        mAdapter = new ListaAdapter(getApplicationContext(), lista);
+       rv.setAdapter(mAdapter);
+
+
+
+
+
+
     }
 
     @Override
