@@ -3,25 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/nome"
-        android:layout_width="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:layout_height="wrap_content"
-        android:text="Sophia"/>
 
-    <TextView
-        android:id="@+id/sobrenome"
+    <include
+        layout="@layout/dados_bebe"
         android:layout_width="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:layout_height="wrap_content"
-        android:text="Alves"/>
+        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/idade"
-        android:layout_width="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:layout_height="wrap_content"
-        android:text="1 ano"/>
+
+
 
 </LinearLayout>

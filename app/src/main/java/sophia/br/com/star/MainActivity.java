@@ -64,7 +64,13 @@ public class MainActivity extends AppCompatActivity
         p.setIdade("1 ano");
         p.setSobrenome("Alves");
 
+        Pessoa p2 = new Pessoa();
+        p2.setNome("Denise ");
+        p2.setSobrenome("Alves");
+        p2.setIdade("39 anos");
+
         List<Pessoa> lista = new ArrayList<Pessoa>();
+        lista.add(p2);
 
         for (int i =0; i < 10; i++){
             p.setNome(p.getNome()+" - "+ i);
@@ -73,11 +79,6 @@ public class MainActivity extends AppCompatActivity
 
         mAdapter = new ListaAdapter(getApplicationContext(), lista);
        rv.setAdapter(mAdapter);
-
-
-
-
-
 
     }
 
