@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,14 +36,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -53,32 +46,6 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-      RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
-    rv.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(this);
-        rv.setLayoutManager(mLayoutManager);
-
-        /** TODO Mock **/
-       Pessoa p = new Pessoa();
-        p.setNome("Sophia");
-        p.setIdade("1 ano");
-        p.setSobrenome("Alves");
-
-        Pessoa p2 = new Pessoa();
-        p2.setNome("Denise ");
-        p2.setSobrenome("Alves");
-        p2.setIdade("39 anos");
-
-        List<Pessoa> lista = new ArrayList<Pessoa>();
-        lista.add(p2);
-
-        for (int i =0; i < 10; i++){
-            p.setNome(p.getNome()+" - "+ i);
-          lista.add(p);
-        }
-
-        mAdapter = new ListaAdapter(getApplicationContext(), lista);
-       rv.setAdapter(mAdapter);
 
     }
 
@@ -119,19 +86,31 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_dados) {
+            Toast.makeText(this, "1", Toast.LENGTH_LONG).show();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_saude) {
+            Toast.makeText(this, "2", Toast.LENGTH_LONG).show();
+        } else if (id == R.id.nav_comer) {
+            Toast.makeText(this, "3", Toast.LENGTH_LONG).show();
+        } else if (id == R.id.nav_atividades) {
+            Toast.makeText(this, "4", Toast.LENGTH_LONG).show();
+        } else if (id == R.id.nav_leitura) {
+            Toast.makeText(this, "5", Toast.LENGTH_LONG).show();
+        } else if (id == R.id.nav_aprendizado) {
+            Toast.makeText(this, "6", Toast.LENGTH_LONG).show();
+        }
+        else if (id == R.id.nav_galeria_fotos) {
+            Toast.makeText(this, "7", Toast.LENGTH_LONG).show();
+        }
+        else if (id == R.id.nav_galeria_videos) {
+            Toast.makeText(this, "8", Toast.LENGTH_LONG).show();
+        }
+        else if (id == R.id.nav_galeria_audios) {
+            Toast.makeText(this, "9", Toast.LENGTH_LONG).show();
+        }
+        else if (id == R.id.nav_gostos) {
+            Toast.makeText(this, "10", Toast.LENGTH_LONG).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

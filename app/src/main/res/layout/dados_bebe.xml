@@ -43,7 +43,7 @@
                 android:layout_height="140dp"
                 android:layout_below="@+id/sub_title_1"
                 android:layout_marginTop="10dp"
-                android:background="@color/colorAccent"
+                android:background="@color/primary_light"
                 android:contentDescription="Image de perfil"
                 app:srcCompat="@drawable/ic_face" />
 
