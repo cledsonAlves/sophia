@@ -1,11 +1,9 @@
 package sophia.br.com.star;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,17 +14,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import sophia.br.com.star.Adapters.ListaAdapter;
-import sophia.br.com.star.Enties.Pessoa;
+import sophia.br.com.star.Fragments.DadosFragment;
+import sophia.br.com.star.Fragments.SaudeFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView.Adapter mAdapter;
+    private DadosFragment dadosFragment;
+    private SaudeFragment saudeFragment;
+    private android.app.FragmentTransaction fragmentTransaction;
+    FragmentManager fm;
+
 
 
     @Override
@@ -45,6 +45,21 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        // Dados Fragment
+        dadosFragment = new DadosFragment();
+        saudeFragment = new SaudeFragment();
+
+        fm = getSupportFragmentManager();
+
+        // Abre uma transação e adiciona
+        FragmentTransaction ft = fm.beginTransaction();
+        getFragmentManager().beginTransaction().add(android.R.id.content, dadosFragment).commit();
+
+        ft.commit();
+
+
 
 
     }
@@ -90,6 +105,8 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(this, "1", Toast.LENGTH_LONG).show();
             // Handle the camera action
         } else if (id == R.id.nav_saude) {
+
+
             Toast.makeText(this, "2", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_comer) {
             Toast.makeText(this, "3", Toast.LENGTH_LONG).show();
