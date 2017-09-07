@@ -1,8 +1,10 @@
 package sophia.br.com.star;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,8 +16,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
+import sophia.br.com.star.Adapters.ListaAdapter;
+import sophia.br.com.star.Enties.Pessoa;
+import sophia.br.com.star.Fragments.AprendizadoFragment;
+import sophia.br.com.star.Fragments.AtividadesFragment;
+import sophia.br.com.star.Fragments.AudiosFragment;
+import sophia.br.com.star.Fragments.ComerFragment;
 import sophia.br.com.star.Fragments.DadosFragment;
+import sophia.br.com.star.Fragments.FotosFragment;
+import sophia.br.com.star.Fragments.GostosFragment;
+import sophia.br.com.star.Fragments.LeituraFragment;
 import sophia.br.com.star.Fragments.SaudeFragment;
+import sophia.br.com.star.Fragments.VideosFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -24,7 +38,15 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView.Adapter mAdapter;
     private DadosFragment dadosFragment;
     private SaudeFragment saudeFragment;
-    private android.app.FragmentTransaction fragmentTransaction;
+    private AprendizadoFragment aprendizadoFragment;
+    private AtividadesFragment atividadesFragment;
+    private  AudiosFragment audiosFragment;
+   private ComerFragment comerFragment;
+    private  FotosFragment fotosFragment;
+    private  VideosFragment videoFragment;
+    private LeituraFragment leituraFragment;
+    private GostosFragment gostoFragment;
+    private FragmentTransaction ft;
     FragmentManager fm;
 
 
@@ -47,20 +69,9 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        // Dados Fragment
-        dadosFragment = new DadosFragment();
-        saudeFragment = new SaudeFragment();
 
-        fm = getSupportFragmentManager();
-
-        // Abre uma transação e adiciona
-        FragmentTransaction ft = fm.beginTransaction();
-        getFragmentManager().beginTransaction().add(android.R.id.content, dadosFragment).commit();
-
-        ft.commit();
-
-
-
+        // inicia os Fragments
+         setupFragments();
 
     }
 
@@ -76,19 +87,14 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -96,42 +102,90 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         if (id == R.id.nav_dados) {
-            Toast.makeText(this, "1", Toast.LENGTH_LONG).show();
-            // Handle the camera action
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, dadosFragment);
+            ft.commit();
+
+
         } else if (id == R.id.nav_saude) {
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, saudeFragment);
+            ft.commit();
 
-
-            Toast.makeText(this, "2", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_comer) {
-            Toast.makeText(this, "3", Toast.LENGTH_LONG).show();
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, comerFragment);
+            ft.commit();
+
+
         } else if (id == R.id.nav_atividades) {
-            Toast.makeText(this, "4", Toast.LENGTH_LONG).show();
+
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, atividadesFragment);
+            ft.commit();
+
         } else if (id == R.id.nav_leitura) {
-            Toast.makeText(this, "5", Toast.LENGTH_LONG).show();
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, leituraFragment);
+            ft.commit();
+
         } else if (id == R.id.nav_aprendizado) {
-            Toast.makeText(this, "6", Toast.LENGTH_LONG).show();
-        }
-        else if (id == R.id.nav_galeria_fotos) {
-            Toast.makeText(this, "7", Toast.LENGTH_LONG).show();
-        }
-        else if (id == R.id.nav_galeria_videos) {
-            Toast.makeText(this, "8", Toast.LENGTH_LONG).show();
-        }
-        else if (id == R.id.nav_galeria_audios) {
-            Toast.makeText(this, "9", Toast.LENGTH_LONG).show();
-        }
-        else if (id == R.id.nav_gostos) {
-            Toast.makeText(this, "10", Toast.LENGTH_LONG).show();
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, aprendizadoFragment);
+            ft.commit();
+
+        } else if (id == R.id.nav_galeria_fotos) {
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, fotosFragment);
+            ft.commit();
+
+        } else if (id == R.id.nav_galeria_videos) {
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, videoFragment);
+            ft.commit();
+
+        } else if (id == R.id.nav_galeria_audios) {
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, audiosFragment);
+            ft.commit();
+
+        } else if (id == R.id.nav_gostos) {
+            ft = fm.beginTransaction();
+            ft.replace(R.id.container, gostoFragment);
+            ft.commit();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void setupFragments(){
+        dadosFragment = new DadosFragment();
+        saudeFragment = new SaudeFragment();
+        aprendizadoFragment = new AprendizadoFragment();
+        atividadesFragment = new AtividadesFragment();
+        audiosFragment = new AudiosFragment();
+        comerFragment = new ComerFragment();
+        fotosFragment = new FotosFragment();
+        videoFragment = new VideosFragment();
+        leituraFragment = new LeituraFragment();
+        gostoFragment = new GostosFragment();
+
+
+
+        fm = getSupportFragmentManager();
+
+        // Abre uma transação e adiciona
+        ft = fm.beginTransaction();
+        ft.add(R.id.container, dadosFragment);
+        ft.commit();
+
     }
 }
