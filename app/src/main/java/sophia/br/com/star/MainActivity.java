@@ -15,10 +15,6 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-        
-        private boolean logado = true;
-        private boolean excluir = true;
-        rpivate String off;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
