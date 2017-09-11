@@ -33,6 +33,8 @@ import sophia.br.com.star.Fragments.VideosFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+        
+        private boolean logado = true;
 
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView.Adapter mAdapter;
@@ -160,6 +162,8 @@ public class MainActivity extends AppCompatActivity
             ft.commit();
 
         }
+        
+        
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
