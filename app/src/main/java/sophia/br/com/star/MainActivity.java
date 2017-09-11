@@ -33,9 +33,6 @@ import sophia.br.com.star.Fragments.VideosFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-        
-        private boolean logado = true;
-        private boolean excluir = true;
 
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView.Adapter mAdapter;
