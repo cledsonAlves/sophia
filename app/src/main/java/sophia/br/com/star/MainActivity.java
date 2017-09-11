@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity
         
         private boolean logado = true;
         private boolean excluir = true;
+        rpivate String off;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
