@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inv_white_three"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/id_main_screen_comprovantes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/inv_white_three"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/inv_white_three"
+            >
+
+            <include layout="@layout/layout_header_printable" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#ddd"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/msg_ico"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/app_back"
+                        android:src="@drawable/ic_success_check" />
+
+                    <TextView
+                        android:id="@+id/msg_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_toEndOf="@+id/msg_ico"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/comprovante_txt_sucesso"
+                        android:textColor="@color/inv_black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lista_comprovantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:visibility="visible"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/container_nota_notificacao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp"
+                        android:visibility="visible"
+                        >
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@color/inv_white"
+                            android:layout_marginStart="20dp"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="20dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="11dp"
+                                android:textSize="14sp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textStyle="normal"
+                                android:textColor="@color/inv_warm_grey"
+                                android:lineSpacingExtra="6sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_toStartOf="@+id/btn_nota_notificacao"
+                                android:text="@string/label_negociacao"
+                                android:layout_centerVertical="true"
+                                />
+                            <ImageButton
+                                android:id="@id/btn_nota_notificacao"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/inv_transparent"
+                                android:src="@drawable/ic_drop_down"
+                                android:rotation="270"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                tools:ignore="ContentDescription" />
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@color/inv_white"
+                            android:layout_marginStart="20dp"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_compartilhar_comprovante"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="70dp"
+                        android:background="#616161"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/app_compartilhar"
+                        android:textAllCaps="true"
+                        android:textColor="@color/inv_white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/inv_warm_grey"
+                            android:lineSpacingExtra="6sp"
+                            android:text="@string/label_central_atendimento"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/inv_warm_grey"
+                            android:lineSpacingExtra="6sp"
+                            android:textAlignment="center"
+                            android:text="@string/telefone_central_atendimento"
+                            android:layout_marginBottom="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textStyle="normal"
+                                android:textColor="@color/inv_warm_grey"
+                                android:lineSpacingExtra="6sp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/label_sac" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textStyle="normal"
+                                android:textColor="@color/inv_warm_grey"
+                                android:layout_marginStart="5dp"
+                                android:lineSpacingExtra="6sp"
+                                android:text="@string/telefone_sac"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textStyle="normal"
+                                android:lineSpacingExtra="6sp"
+                                android:textColor="@color/inv_warm_grey"
+                                android:text="@string/label_ouvidoria" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textStyle="normal"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/inv_warm_grey"
+                                android:lineSpacingExtra="6sp"
+                                android:text="@string/telefone_ouvidoria" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_continuar_comprovante"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#616161"
+                        android:textColor="@color/inv_white"
+                        android:text="@string/app_fechar"
+                        android:textAllCaps="true"
+                        android:focusable="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="20dp"
+                        android:focusableInTouchMode="true"
+                        style="?android:attr/borderlessButtonStyle"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/layout_header_pequeno" />
+    <!-- laoding -->
+    <RelativeLayout
+        android:id="@+id/comp_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/inv_white_three">
+        <include layout="@layout/layout_loading_state"/>
+    </RelativeLayout>
+</RelativeLayout>

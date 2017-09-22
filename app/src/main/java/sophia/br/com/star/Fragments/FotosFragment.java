@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import sophia.br.com.star.Adapters.ListaAdapter;
 import sophia.br.com.star.Enties.Pessoa;
 import sophia.br.com.star.R;
+import sophia.br.com.star.Util.Util;
 
 /**
  * Created by cledson.alves on 06/09/2017.
@@ -31,13 +32,14 @@ public class FotosFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fotos_fragment, container, false);
 
+
+
         ArrayList<Pessoa> lista = new ArrayList<Pessoa>();
         Pessoa p = new Pessoa();
         p.setNome(""); p.setIdade("");p.setSobrenome("");
         for (int i = 0; i < 200; i++){
             lista.add(p);
         }
-
 
         rvEnderecoPvs = (RecyclerView) view.findViewById(R.id.rv);
 
@@ -46,10 +48,11 @@ public class FotosFragment extends Fragment {
         enderecoAdapter = new ListaAdapter(view.getContext(), lista);
 
         rvEnderecoPvs.setAdapter(enderecoAdapter);
-
-
-
+        Util.animateFragment(view);
         return view;
 
     }
+
+
+
 }

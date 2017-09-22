@@ -3,4 +3,367 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Configurações</string>
-</resources>
+
+
+        <string name="app_monetary_simbol">R$</string>
+        <string name="app_back">back</string>
+        <string name="app_ok">OK</string>
+        <string name="app_tentar_novamente">Tentar novamente</string>
+        <string name="app_fechar">FECHAR</string>
+        <string name="app_editar">EDITAR</string>
+        <string name="app_edicao">Edição</string>
+        <string name="app_remover">REMOVER</string>
+        <string name="app_compartilhar">COMPARTILHAR</string>
+        <string name="app_sim">SIM</string>
+        <string name="app_nao">NÃO</string>
+        <string name="app_continuar">Continuar</string>
+        <string name="app_confirmar">Confirmar</string>
+        <string name="app_cancelar">Cancelar</string>
+        <string name="app_proxima">Próxima aplicação</string>
+        <string name="app_voltar_inicio">VOLTAR AO INÍCIO</string>
+        <string name="app_ocultar_produtos">Ocultar produtos contratados</string>
+        <string name="app_ver_produtos">Ver produtos contratados</string>
+        <string name="app_dias">%d Dias</string>
+        <string name="app_selecionar_conta">Selecione uma conta</string>
+        <string name="app_prazo_dialog">Prazo de vencimento (em dias)</string>
+        <string name="app_tit_sair_aplicacao">Tem certeza que deseja abandonar essas operações?</string>
+        <string name="app_msg_sair_aplicacao">As informações inseridas serão descartadas.</string>
+        <string name="app_atencao">Atenção</string>
+        <string name="app_msg_sem_saldo">"O valor da aplicação excede o saldo disponível na conta %1$s"</string>
+        <string name="app_msg_sucesso">As alterações foram realizadas com sucesso</string>
+        <string name="app_operacoes_indisponiveis">OPERAÇÕES INDISPONÍVEIS</string>
+        <string name="app_investimentos_titulo">Investimentos</string>
+        <string name="app_aplicar">Aplicar</string>
+        <string name="app_hoje">Hoje</string>
+        <string name="app_resgatar">Resgatar</string>
+        <string name="app_carregando">Carregando</string>
+        <string name="app_erro">Problemas em acessar as informações</string>
+        <string name="app_erro_mensagem">Estamos enfrentando problemas em acessar suas informações, pode ser algum problema de conectividade. Deseja tentar novamente? </string>
+        <string name="app_ligue_agora">Ligue agora</string>
+        <string name="app_horario">seg a sex das 08:00 as 20:00hrs</string>
+        <string name="app_chat">Chat</string>
+        <string name="app_central_de_atendimento">Central de Atendimento</string>
+        <string name="app_dialog_texto_central_atendimento">Para aportes ou novas contratações fale com nossa assessoria especializada.</string>
+        <string name="app_zero_double">0.00</string>
+        <string name="app_dialog_telefone_atendimento">4004–3535</string>
+        <string name="app_finalizar_resgate">FINALIZAR RESGATE</string>
+        <string name="app_alterar_aplicacao">Alterar aplicação</string>
+        <string name="app_aguarde">Aguarde</string>
+        <string name="app_de_ate">De %1$s até %2$s</string>
+        <string name="aviso_saida_para_outro_app_santander">Você irá acessar um outro aplicativo do Santander. Deseja continuar?</string>
+        <string name="aviso_saida_para_acesso_url_externa">Você irá acessar uma página da web. Deseja continuar?</string>
+        <string name="app_corretora_url_hk">https://homol2.santandercorretora.com.br/S2/Shell/ServicePages/EnterPage.aspx?token=%s</string>
+        <!--string name="app_corretora_url_hk">https://homol2.santandercorretora.com.br/TMN/v3198/?token=%s</string-->
+        <string name="app_corretora_url">https://www2.santandercorretora.com.br/S2/Shell/ServicePages/EnterPage.aspx?token=%S</string>
+        <string name="app_monetary_value">R$ %1$s</string>
+        <string name="app_aplicar_valor">Investir por valor</string>
+        <string name="app_dialogo_rentabilidade">Quanto mais tempo o seu dinheiro permanecer aplicado, maior será a sua rentabilidade.</string>
+        <string name="app_dialogo_msg_29_30_31">"Não é possível programar a data para de transferência de valores para a poupança para os dias 29, 30 ou 31."</string>
+        <string name="app_investimento_sem_saldo_disponivel">Investimento sem saldo disponível para resgate.</string>
+
+        <!-- Place Holder -->
+        <string name="ph_zero_decimal">0,00</string>
+        <string name="ph_text_pq">Lorem Ipsum</string>
+        <string name="ph_monetario">R$9.999,99</string>
+        <string name="ph_data">99/99/9999</string>
+        <string name="ph_zero_dia">0 dias</string>
+        <!-- Error Handler -->
+        <string name="error_msg_teste">Olar! Teste de mensagem de erro de sistema! </string>
+        <string name="error_generic">Não foi possível obter os dados de suas aplicações. Tente novamente mais tarde.</string>
+
+        <!-- tela de home - Portifolio-->
+        <string name="inv_home_lbl_consolidado">CONSOLIDADO</string>
+        <string name="inv_home_lbl_historico"><u>VER HISTÓRICO</u></string>
+        <string name="inv_home_lbl_valor_investido">Valor total</string>
+        <string name="inv_home_lbl_valor_disponivel">Valor disponível para resgate</string>
+        <string name="inv_home_btn_aplicar">Aplicar</string>
+        <string name="inv_home_btn_resgatar">Resgatar</string>
+        <string name="tit_produtos_contratados">Produtos contratados</string>
+
+        <!-- Tela de empty state - investimento Portifolio-->
+        <string name="inv_empty_sem_investimento">Você não possui nenhum investimento contratado</string>
+        <string name="inv_empty_perfil">Gostaria de ver nossa recomendação para o seu perfil?</string>
+        <string name="inv_empty_button_comecar">Começar</string>
+
+        <!-- tela de detalhe de subproduto-->
+        <string name="det_subp_lbl_produto">Produto Selecionado</string>
+        <string name="det_subp_lbl_valor_total">Valor total</string>
+        <string name="det_subp_lbl_valor_investido">Valor investido</string>
+        <string name="det_subp_lbl_valor_disponivel">Valor disponível para resgate</string>
+        <string name="det_subp_lbl_ultima_atualizacao">Valores referentes a</string>
+        <string name="det_subp_lbl_qntd_contratos">Você possui %d</string>
+        <string name="det_subp_lbl_detalhe_operacao_singular">contrato neste investimento:</string>
+        <string name="det_subp_lbl_detalhe_operacao_plural">contratos neste investimento:</string>
+        <string name="card_det_sub_ver_detalhe">Ver detalhes</string>
+        <string name="card_det_sub_ocultar_detalhe">Ocultar detalhes</string>
+        <string name="det_subp_coe_content">Taxa de Remuneração de 11,5% ao período, caso Dólar dos EUA seja maior ou igual ao Valor de Referência. Caso contrário, e desde que não haja Resgate Antecipado, receberá apenas o Valor nominal aplicado.</string>
+        <string name="det_subp_text_go_corretora">Para consultar o valor disponível para resgate e realizar transações, acesse o aplicativo</string>
+        <string name="det_subp_label_app_corretora">Santander Corretora.</string>
+        <string name="det_subp_label_operacao_corretora_plural">ativos neste investimento:</string>
+        <string name="det_subp_label_operacao_corretora_singular">ativo neste investimento:</string>
+        <string name="det_subp_lbl_valor_nominal">Valor nominal aplicado</string>
+        <string name="det_subp_label_operacao_corretora_popup_title">Aviso</string>
+        <string name="det_subp_label_operacao_corretora_popup_content">Para acessar este conteúdo, você será direcionado a outro aplicativo do Santander.</string>
+        <string name="det_subp_msg_padrao_tooltip">Operação indisponível.</string>
+
+        <!-- tela quer qplicar?-->
+        <string name="apli_previdecia_btn_continuar">CONTINUAR</string>
+        <string name="apli_quer_aplicar">Onde quer aplicar?</string>
+        <string name="apli_voce_pode_aplicar">Você pode aplicar em uma ou mais certificados ao mesmo tempo.</string>
+        <string name="apli_new_title">Aplicação</string>
+
+        <!-- Tela nova aplicação-->
+        <string name="apli_novo_new_operation">Nova Operação</string>
+        <string name="apli_novo_carencia">Carência</string>
+        <string name="apli_novo_nao_ha">Não há</string>
+        <string name="apli_novo_ver_regras">Ver regras para remuneração</string>
+        <string name="apli_novo_lbl_valor_investido">Valor investido</string>
+        <string name="apli_novo_prazo_de_vencimento">Prazo de vencimento</string>
+        <string name="apli_titulo_prazo_dialog">Prazo de vencimento (em dias)</string>
+        <string name="apli_novo_aplicacoes_mensais">APLICAÇÕES MENSAIS</string>
+        <string name="apli_novo_cdb_di_funcionario">CDB DI Funcionário</string>
+        <string name="apli_novo_conta_de_origem">Conta de origem</string>
+        <string name="apli_novo_agencia_conta_corrente">Agência e conta corrente</string>
+        <string name="apli_novo_alterar">ALTERAR</string>
+        <string name="apli_novo_saldo_disponivel">Saldo disponível:</string>
+        <string name="apli_novo_saldo_disponivel_total">Saldo disponível total:</string>
+        <string name="apli_novo_valor_da_aplicacao">Valor da aplicação</string>
+        <string name="apli_novo_valor_minimo">Valor mínimo: R$ 1.000,00</string>
+        <string name="apli_novo_data_da_aplicacao">Data da aplicação</string>
+        <string name="apli_novo_horario_limite_para_aplicacao">Horário limite para aplicação: 20:00</string>
+        <string name="apli_novo_msg_prox_dia_util">A aplicação será efetuada no dia selecionado ou no próximo dia útil.</string>
+        <string name="apli_novo_parzo_max_msg">Prazo máximo: %s dias</string>
+
+        <!-- Tela carrinho-->
+        <string name="cart_novo_contrato">Nova Operação</string>
+        <string name="cart_label">Estamos quase lá! Revise as informações abaixo antes de finalizar</string>
+        <string name="car_termos_e_condicoes">Termos e condições</string>
+        <string name="cart_disclaimer">Caso a data da aplicação caia em um feriado ou fim de semana, a aplicação ocorrerá no próximo dia útil.\n\nPara futuramente acessar ou editar esta ou outras programações efetuadas, acesse o Internet Banking.\n\n A rentabilidade passada não representa garantia de rentabilidade futura.</string>
+        <string name="car_chk_termos_e_condicoes">Li e concordo com o Termos e Condições Gerais das aplicações acima.</string>
+        <string name="car_texto_termo_recusa_completo">Li e concordo com o Termo de Recusa de Preenchimento do API.</string>
+        <string name="car_texto_li_e_concordo_com">Li e concordo com o </string>
+        <string name="car_btn_finalizar_contratacao">Finalizar Contratação</string>
+        <string name="car_txt_vlr_aplicacao">Valor da aplicação</string>
+        <string name="car_txt_vlr_aplicacao_mensal">Valor da aplicação mensal</string>
+        <string name="car_txt_card_dt_aplicacao_ind">Data da aplicação</string>
+        <string name="car_card_dt_primeira_aplicacao">Data da primeira aplicação</string>
+        <string name="cart_txt_resgate">Resgate</string>
+        <string name="cart_txt_qlqr_momento">A qualquer momento</string>
+        <string name="cart_txt_rentabilidade_ultimos_meses">Rentabilidade dos últimos 12 meses</string>
+        <string name="cart_rentabilidade">Rentabilidade</string>
+        <string name="cart_txt_prazo">Prazo de vencimento</string>
+        <string name="cart_txt_proximas_apli">Próximas aplicações</string>
+        <string name="cart_txt_leia_mais">Leia mais</string>
+        <string name="cart_txt_api_title">Aviso</string>
+        <string name="alert_img_description">Alerta</string>
+        <string name="termos_gerais">Li e concordo com os Termos e Condições da aplicação acima.</string>
+
+
+        <string name="car_card_carencia">Carência</string>
+        <string name="car_card_efeticacao">Efetivação</string>
+        <string name="car_card_na_data_aplicacao">Na data da aplicação</string>
+        <string name="car_card_aplicacao_mensal">Aplicação mensal</string>
+
+        <string name="car_card_na_data_solicitacao">Na data da solicitação</string>
+        <string name="car_card_tit_dialog_remover">Tem certeza que deseja remover esta operação?</string>
+        <string name="car_card_tit_dialog_abandonar">Tem certeza que deseja abandonar essas operações?</string>
+        <string name="car_card_msg_dialog_remover">As informações inseridas serão descartadas.</string>
+        <string name="car_empty_state">Todas as aplicações foram removidas.</string>
+        <string name="car_card_lbl_visualizar">Visualizar</string>
+
+        <string name="car_tot_aplicacoes_ind">Aplicações individuais</string>
+        <string name="car_tot_aplicacoes_men">Aplicações mensais</string>
+
+        <string name="car_card_vlr_tot_investido">Valor total investido</string>
+        <string name="car_card_lbl_aplicacao_individual">Aplicação individual</string>
+        <string name="car_card_vlr_aplicacao">Valor da aplicação</string>
+        <string name="car_card_dt_aplicacao_ind">Data da aplicação</string>
+
+        <!-- Tooltips messages-->
+        <string name="tool_nao_permite_aplicar">Este fundo está fechado e não permite mais aplicações</string>
+
+        <!-- Tela Lista termos de aceite -->
+        <string name="termo_aceite">Termos</string>
+        <string name="apli_valor_investido">Valor investido</string>
+        <string name="apli_valor_minimo">Valor mínimo</string>
+        <string name="apli_lbl_carencia">Carência</string>
+
+        <!-- Tela de efetivação-->
+        <string name="efe_aguarde">Suas aplicações estão sendo processadas. Aguarde…</string>
+        <string name="efe_erro">Algumas aplicações não foram processadas corretamente</string>
+
+        <!-- Tela de Comprovantes -->
+        <string name="comprovante_lbl_individual">Aplicação individual</string>
+        <string name="comprovante_lbl_recorrente">Aplicações mensais</string>
+        <string name="titulo_comprovantes">Comprovantes</string>
+        <string name="label_central_atendimento">Central de Atendimento Santander</string>
+        <string name="telefone_central_atendimento">4004–3535 (Capitais e Regiões Metropolitanas)\n0800–702–3535 (Demais Localidades)</string>
+        <string name="label_sac">SAC</string>
+        <string name="telefone_sac">0800–762–777</string>
+        <string name="label_ouvidoria">Ouvidoria</string>
+        <string name="telefone_ouvidoria">0800–762–0322</string>
+        <string name="comprovante_txt_sucesso">As seguintes aplicações foram realizadas com sucesso.</string>
+        <string name="comprovante_resgate_txt_sucesso">O seguinte resgate foi realizado com sucesso.</string>
+        <string name="label_negociacao">Nota de negociação</string>
+
+        <!-- Item de Comprovante -->
+        <string name="label_produto">Produto:</string>
+        <string name="label_certificado">Certificado:</string>
+        <string name="label_nome_titular">Nome do títular:</string>
+        <string name="label_cpf">CPF:</string>
+        <string name="label_efetivacao">Efetivação:</string>
+        <string name="label_prazo">Prazo:</string>
+        <string name="label_valor_total_investido">Valor total investido:</string>
+        <string name="label_valor_resgate">Valor do resgate:</string>
+        <string name="label_iof">IOF:</string>
+        <string name="label_ir">IR:</string>
+        <string name="label_taxa_carregamento">Taxa de carregamento de saída:</string>
+        <string name="label_data_hora_transacao">Data e hora da transação:</string>
+        <string name="label_autenticacao_transacao">Autenticação bancária:</string>
+        <string name="label_valor_aplicacao">Valor da aplicação:</string>
+        <string name="label_data_aplicacao">Data da aplicação:</string>
+        <string name="label_carencia">Carência:</string>
+
+        <!-- Toast Abandonar Carrinho -->
+        <string name="label_retomar_apli">Retomar aplicação.</string>
+
+        <!-- Tela configuração de aplicação -->
+        <string name="config_txt_conta_saldo_total">Saldo disp. total</string>
+        <string name="config_txt_saldo">Saldo disp.</string>
+        <string name="config_txt_nome_produto">CDB Progressivo 10M</string>
+        <string name="config_txt_quanto_investir">Quanto gostaria de investir?</string>
+        <string name="config_txt_programar_mensal">Programar mensal</string>
+        <string name="config_txt_aplicar">Aplicar</string>
+        <string name="config_apl_txt_rentabilidade">Rentabilidade</string>
+        <string name="config_apl_txt_rentabilidade_12_meses">Rentabilidade dos últimos 12 meses</string>
+        <string name="config_apl_txt_resgate">Resgate</string>
+        <string name="config_apl_txt_taxa_adm">Taxa de Administração</string>
+        <string name="config_apl_txt_qualquer_momento">A qualquer momento</string>
+        <string name="config_apl_txt_prazo">Prazo de vencimento</string>
+        <string name="config_apl_txt_data">Data da aplicação</string>
+        <string name="config_apl_txt_data_primeira_aplicacao">Data da primeira aplicação</string>
+        <string name="config_apl_txt_valor_minimo">Valor mínimo: %s</string>
+        <string name="config_apl_txt_data_validacao">Horário limite para aplicação: %s</string>
+        <string name="config_resgate_txt_data_validacao">Horário limite para resgate: %s</string>
+        <string name="config_apl_txt_mensagem">O serviço de programação de aplicações é gratuito.</string>
+        <string name="config_apl_txt_prazo_mensagem">O prazo deve ser menor que %1$s dias</string>
+        <string name="config_apl_empty_value">0,00</string>
+
+        <!-- Tela configuração de investimento por valor -->
+        <string name="config_inv_txt_como_fazer_aplicacao">Como gostaria de fazer sua aplicação?</string>
+        <string name="config_inv_txt_seleciona_como_fazer_aplicacao">Selecione uma das opções e comece a investir!</string>
+        <string name="config_inv_txt_escolher_produto_titulo">Escolher um produto</string>
+        <string name="config_inv_txt_escolher_produto_conteudo">a partir do nosso catálogo de investimentos disponíveis para você.</string>
+        <string name="config_inv_txt_informar_valor_titulo">Informe um valor</string>
+        <string name="config_inv_txt_informar_valor_conteudo">e deixe para nós recomendarmos a melhor distribuição para seu dinheiro em nossos produtos.</string>
+        <string name="config_inv_txt_api_txt">Para acessar esta opção, responda o questionário de Análise de Perfil do Investidor (API) no Internet Banking.</string>
+
+        <!-- Tela de investir por valor -->
+        <string name="investir_por_valor_quanto_gostaria_investir">Quanto gostaria de investir?</string>
+        <string name="investir_por_valor_hint">00,00</string>
+        <string name="investir_por_valor_como_gostaria_investir">Quanto desse valor você pretende utilizar em menos de 1 ano?</string>
+        <string name="investir_por_valor_aplicar_valor_total">Todo o valor</string>
+        <string name="investir_por_valor_aplicar_valor_parcial">Uma parte do valor</string>
+        <string name="investir_por_valor_aplicar_outros">Não sei, mas aceito sugestões</string>
+        <string name="investir_por_valor_botao_ver_recomendacao">VER RECOMENDAÇÃO</string>
+        <string name="investir_por_valor_aviso_cheque_especial">O valor a ser aplicado excede o saldo disponível na conta selecionada. Tem certeza de que deseja utilizar o seu limite no cheque especial para este investimento?</string>
+        <string name="investir_por_valor_aviso_saldo_insuficiente">O valor a ser aplicado excede o seu saldo total disponível. </string>
+
+        <!-- Tela de recomendaçào de investimento -->
+        <string name="recomendacao_investimento_header">Investimentos</string>
+        <string name="recomendacao_investimento_hint">0.000,00</string>
+        <string name="recomendacao_investimento_titulo">Nossa recomendação</string>
+        <string name="recomendacao_investimento_info">Confira o plano que montamos com base em seu perfil de investidor :</string>
+        <string name="recomendacao_investimento_valor_a_aplicar">Valor total a aplicar</string>
+        <string name="recomendacao_investimento_utilizar_em_1_ano">Para você utilizar em menos de 1 ano:</string>
+        <string name="recomendacao_investimento_utilizar_em_mais_anos">Para utilizar após 1 ano:</string>
+        <string name="recomendacao_investimento_central_atendimento">Para informações sobre produtos como Previdência e Corretora, acesse nossa Central de Atendimento.</string>
+
+        <!-- listagem por subproduto-->
+        <string name="list_subp_titulo">Investimento por produto</string>
+        <string name="list_subp_subtitulo">Confira abaixo alguns de nossos produtos em destaque.</string>
+        <string name="list_subp_rentabilidade">Rentabilidade:</string>
+        <string name="list_subp_valor_minimo_variavel">Mínimo: Variável</string>
+        <string name="list_subp_risco_variavel">Risco variável</string>
+        <string name="list_corretora_santander_corretora">Santander Corretora</string>
+        <string name="list_corretora_texto_link">Saiba mais: acesse o </string>
+
+        <!-- Popup da Poupança -->
+        <string name="label_composicao">Composição do valor</string>
+        <string name="label_regra_anterior">Valor investido até 03/05/12 (regra anterior)</string>
+        <string name="label_regra_nova">Valor investido a partir de 04/05/12 (regra nova)</string>
+
+        <!-- Validacao -->
+        <string name="validacao_id_santander_titulo_habilitacao">Habilitando</string>
+        <string name="validacao_id_santander_sub_titulo_habilitacao">Estamos habilitando seu ID Santander.</string>
+        <string name="validacao_id_santander_titulo_nao_habilitado">Modo consultivo</string>
+        <string name="validacao_id_santander_subtitulo_nao_habilitado"><![CDATA[Por enquanto este<br>aparelho <b>não pode<br>realizar movimentações<br>financeiras</b>.]]></string>
+        <string name="validacao_id_santander_button">Ok, entendi</string>
+
+        <!-- Resgate -->
+        <string name="resgate_valor_parcial">Valor parcial</string>
+        <string name="resgate_valor_total">Valor total</string>
+        <string name="resgate_lbl_vlr_disponivel_resgate">Valor disponível para resgate</string>
+        <string name="resgate_lbl_origem">Origem</string>
+        <string name="resgate_quanto_gostaria_de_resgatar">Quanto gostaria de resgatar?</string>
+        <string name="resgate_data_de_resgate">Data do resgate</string>
+        <string name="resgate_txt_validacao">Horário limite para resgate: %s</string>
+        <string name="resgate_txt_validacao_valor">Este é o valor máximo permitido por transação para este produto</string>
+        <string name="resgate_titulo">Revisão do resgate</string>
+        <string name="fim_resgate_texto_header">Estamos quase lá! Revise as informações abaixo antes de finalizar.</string>
+        <string name="fim_resgate_operacao">Operação:</string>
+        <string name="fim_resgate_titular">Titular:</string>
+        <string name="fim_resgate_texto_bottom">Caso a data de solicitação do resgate caia em um feriado ou fim de semana, ele ocorrerá no próximo dia útil.</string>
+        <string name="title_activity_validacao">ValidacaoActivity</string>
+
+        <string name="label_conta_corrente">Conta corrente</string>
+
+        <!-- CSO -->
+        <string name="cso_title">VALIDAÇÃO</string>
+        <string name="cso_content_label">Verifique em seu Cartão de Segurança On-line, o código correspondente ao número:</string>
+        <string name="cso_00_label">00</string>
+        <string name="cso_identification_number_label">Número de identificação:</string>
+
+        <!-- ANALYTICS TAGS -->
+
+        <string name="tag_name_posicao_consolidada_acao">Investimentos_PosicaoConsolidada_Acao</string>
+        <string name="tag_valor_posicao_consolidada_comecar">Comecar</string>
+        <string name="tag_valor_posicao_consolidada_aplicar">Aplicar</string>
+        <string name="tag_name_posicao_consolidada_acao_familia">Investimentos_PosicaoConsolidada_%s_Acao</string>
+        <string name="tag_valor_posicao_consolidada_acao_familia_exibir">Exibir</string>
+        <string name="tag_valor_posicao_consolidada_acao_familia_ocultar">Ocultar</string>
+        <string name="tag_name_detalhamento_acao_aplicar_resgatar">Investimentos_Detalhamento_%1$s_%2$s_%3$s_Acao</string>
+        <string name="tag_valor_detalhamento_aplicar">Aplicar</string>
+        <string name="tag_valor_detalhamento_resgatar">Resgatar</string>
+        <string name="tag_name_resgatar_acao">Investimentos_Resgatar_%1$s_%2$s_%3$s_Acao</string>
+        <string name="tag_valor_resgatar_acao_parcial">ValorParcial</string>
+        <string name="tag_valor_resgatar_acao_total">ValorTotal</string>
+        <string name="tag_name_resgatar_data_acao">Investimentos_Resgatar_%1$s_%2$s_%3$s_DataDeResgate_Acao</string>
+        <string name="tag_valor_data_hoje">Hoje</string>
+        <string name="tag_valor_data_agendada">DataAgendada</string>
+        <string name="tag_name_resgatar_dataResgate">Investimentos_Resgatar_%1$s_%2$s_%3$s_DataDeResgate</string>
+        <string name="tag_valor_continuar">Continuar</string>
+        <string name="tag_valor_finalizar">Finalizar</string>
+        <string name="tag_name_comprovante_resgate_acao">Investimentos_Resgatar_%1$s_%2$s_%3$s_Comprovante_Comprovante_Acao</string>
+        <string name="tag_valor_comprovante_fechar">Fechar</string>
+        <string name="tag_valor_comprovante_compartilhar">Compartilhar</string>
+        <string name="tag_name_comprovante_resgate_referOper">Investimentos_Resgatar_%1$s_%2$s_%3$s_ReferOper</string>
+        <string name="tag_valor_resgate_info">InformativoValorDisponivelParaResgate</string>
+        <string name="tag_name_resgatar_valorResgate">Investimentos_Resgatar_%1$s_%2$s_%3$s_ValorDeResgate</string>
+        <string name="tag_name_aplicar_acao">Investimentos_Aplicar_%1$s_%2$s_%3$s_Acao</string>
+        <string name="tag_valor_selecionarConta">SelecionarConta</string>
+        <string name="tag_valor_aplicar_aplicar">Aplicar</string>
+        <string name="tag_valor_aplicar_programar">Programar</string>
+        <string name="tag_name_aplicar_data_acao">Investimentos_Aplicar_%1$s_%2$s_%3$s_DataDeAplicacao_Acao</string>
+        <string name="tag_name_aplicar_revisao_acao">Investimentos_Aplicar_%1$s_%2$s_%3$s_Revisao_Acao</string>
+        <string name="tag_name_aplicar_comprovante_acao">Investimentos_Aplicar_%1$s_%2$s_%3$s_Revisao_Comprovante_Acao</string>
+        <string name="tag_name_aplicar_comprovante_referOper">Investimentos_Aplicar_%1$s_%2$s_%3$s_ReferOper</string>
+        <string name="tag_name_aplicar_comprovante_dataAplicacao">Investimentos_Aplicar_%1$s_%2$s_%3$s_DataDeAplicacao</string>
+        <string name="tag_name_aplicar_comprovante_valorAplicacao">Investimentos_Aplicar_%1$s_%2$s_%3$s_ValorDeAplicacao</string>
+        <string name="tag_name_aplicar_comprovante_prazoVencimento">Investimentos_Aplicar_%1$s_%2$s_%3$s_PrazoDeVencimento</string>
+
+        <string name="tag_name_recomendacao_acao">Investimentos_Recomendacao_Acao</string>
+
+
+    </resources>
+

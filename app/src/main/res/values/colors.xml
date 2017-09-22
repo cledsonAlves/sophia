@@ -8,4 +8,46 @@
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
+
+    <color name="inv_transparent">#00ffffff</color>
+    <color name="inv_pumpkin_orange_70">#99f88200</color>
+    <color name="inv_black_two_40">#66000000</color>
+    <color name="inv_black_two_20">#33000000</color>
+    <color name="inv_red">#e00303</color>
+    <color name="inv_warm_grey">#787878</color>
+    <color name="inv_dark_red">#800000</color>
+    <color name="inv_red_two">#cb0000</color>
+    <color name="inv_red_tree">#ec0000</color>
+    <color name="inv_deep_red">#980000</color>
+    <color name="inv_black">#191919</color>
+    <color name="inv_black_70">#99191919</color>
+    <color name="inv_black_four">#444444</color>
+    <color name="inv_brownish_grey">#6d6d6d</color>
+    <color name="inv_warm_grey_two">#999999</color>
+    <color name="inv_pinkish_grey">#d1d1d1</color>
+    <color name="inv_off_white">#fdf7e9</color>
+    <color name="inv_white">#f0f0f0</color>
+    <color name="inv_white_two">#fbfbfb</color>
+    <color name="inv_white_three">#ffffff</color>
+    <color name="inv_white_four">#e1e1e1</color>
+    <color name="inv_tealish">#20b2bb</color>
+    <color name="inv_topaz">#1bb3bc</color>
+    <color name="inv_light_burgundy">#8c3362</color>
+    <color name="inv_squash">#f0b322</color>
+    <color name="inv_pumpkin_orange">#f88200</color>
+    <color name="inv_grassy_green">#269800</color>
+    <color name="inv_red_three">#cc0000</color>
+    <color name="inv_brownish_orange">#d8a11e</color>
+    <color name="inv_black_two">#000000</color>
+    <color name="inv_very_light_pink">#fff5eb</color>
+    <color name="inv_light_grey_green">#e9f4e6</color>
+    <color name="inv_header_select">#aa957c</color>
+    <color name="inv_header_negocio">#685743</color>
+    <color name="inv_header_private">#000000</color>
+    <color name="inv_header_van_gogh">#cc0000</color>
+    <color name="inv_header_defaut">#ec0000</color>
+    <color name="inv_mark_yellow">#f6ff00</color>
+    <color name="inv_background_button_id_santander">#6d6d6d</color>
+    <color name="inv_lightgrey_cso">#ded8d8</color>
+
 </resources>
