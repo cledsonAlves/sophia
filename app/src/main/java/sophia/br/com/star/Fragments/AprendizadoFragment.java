@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import sophia.br.com.star.R;
 import sophia.br.com.star.Util.CircleDisplay;
@@ -16,6 +17,7 @@ import sophia.br.com.star.Util.CircleDisplay;
  */
 
 public class AprendizadoFragment extends Fragment {
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -32,6 +34,7 @@ public class AprendizadoFragment extends Fragment {
         setAnimation(cd_ingles, 85f, Color.YELLOW,10f);
         setAnimation(cd_espanhol, 78f, Color.RED,10f);
         setAnimation(cd_matematica, 97f, Color.BLUE,10f);
+
         return view;
 
     }

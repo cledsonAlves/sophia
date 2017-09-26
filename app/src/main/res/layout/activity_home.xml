@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".features.home.view.HomeActivity">
 
+
     <LinearLayout
         android:id="@+id/inv2_home_activity"
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
         android:background="@android:color/white"
         android:gravity="center_horizontal"
         android:orientation="vertical" >
+
     </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

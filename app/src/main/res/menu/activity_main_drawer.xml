@@ -23,7 +23,7 @@
             android:title="Comer comer" />
         <item
             android:id="@+id/nav_atividades"
-            android:icon="@drawable/ic_child_care_black_24dp"
+            android:icon="@drawable/ic_casino_white_24dp"
             android:title="Atividades" />
     </group>
 
@@ -40,7 +40,8 @@
 
         </menu>
     </item>
-    <item android:title="Interatividade">
+    <item android:title="Interatividade"
+        android:icon="@drawable/ic_casino_white_24dp">
         <menu>
 
             <item
@@ -65,7 +66,7 @@
         <menu>
             <item
                 android:id="@+id/nav_gostos"
-                android:icon="@drawable/ic_child_care_black_24dp"
+                android:icon="@drawable/ic_star_black_24dp"
                 android:title="Gostos da Sophia" />
 
         </menu>
