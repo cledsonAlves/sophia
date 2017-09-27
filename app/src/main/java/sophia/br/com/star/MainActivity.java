@@ -1,6 +1,9 @@
 package sophia.br.com.star;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.SystemClock;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -17,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -45,15 +49,17 @@ public class MainActivity extends AppCompatActivity
     private SaudeFragment saudeFragment;
     private AprendizadoFragment aprendizadoFragment;
     private AtividadesFragment atividadesFragment;
-    private  AudiosFragment audiosFragment;
+    private AudiosFragment audiosFragment;
     private ComerFragment comerFragment;
-    private  FotosFragment fotosFragment;
-    private  VideosFragment videoFragment;
+    private FotosFragment fotosFragment;
+    private VideosFragment videoFragment;
     private LeituraFragment leituraFragment;
     private GostosFragment gostoFragment;
     private FragmentTransaction ft;
     private Toolbar toolbar;
-    FragmentManager fm;
+    private FragmentManager fm;
+    private RelativeLayout loading;
+
 
 
 
@@ -64,6 +70,8 @@ public class MainActivity extends AppCompatActivity
          toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+        loading = (RelativeLayout) findViewById(R.id.success_green);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -76,6 +84,7 @@ public class MainActivity extends AppCompatActivity
 
         // inicia os Fragments
          setupFragments();
+
 
     }
 
@@ -108,79 +117,78 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+        //    <!--   NAV DRAWER LAYOUT -->
         int id = item.getItemId();
         if (id == R.id.nav_home) {
-            updateToolbar("Home");
+            updateToolbar(getResources().getString(R.string.nav_home));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, homeFragment);
             ft.commit();
 
 
         } else if (id == R.id.nav_dados) {
-            updateToolbar("Dados da Sophia");
+            updateToolbar(getResources().getString(R.string.nav_dados));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, dadosFragment);
             ft.commit();
 
         } else if (id == R.id.nav_saude) {
-            updateToolbar("Saúde");
+            updateToolbar(getResources().getString(R.string.nav_saude));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, saudeFragment);
             ft.commit();
 
         } else if (id == R.id.nav_comer) {
-            updateToolbar("Comer comer");
+            updateToolbar(getResources().getString(R.string.nav_comer));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, comerFragment);
             ft.commit();
 
 
         } else if (id == R.id.nav_atividades) {
-            updateToolbar("Atividades");
+            updateToolbar(getResources().getString(R.string.nav_atividades));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, atividadesFragment);
             ft.commit();
 
+
         } else if (id == R.id.nav_leitura) {
-            updateToolbar("Cantinho da leitura");
+            updateToolbar(getResources().getString(R.string.nav_leitura));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, leituraFragment);
             ft.commit();
 
         } else if (id == R.id.nav_aprendizado) {
-            updateToolbar("Curva de aprendizado");
+            updateToolbar(getResources().getString(R.string.nav_aprendizado));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, aprendizadoFragment);
             ft.commit();
 
         } else if (id == R.id.nav_galeria_fotos) {
-            updateToolbar("Galeria de fotos");
+            updateToolbar(getResources().getString(R.string.nav_fotos));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, fotosFragment);
             ft.commit();
 
         } else if (id == R.id.nav_galeria_videos) {
-            updateToolbar("Galeria de videos");
+            updateToolbar(getResources().getString(R.string.nav_videos));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, videoFragment);
             ft.commit();
 
         } else if (id == R.id.nav_galeria_audios) {
-            updateToolbar("Galeria de audios");
+            updateToolbar(getResources().getString(R.string.nav_audio));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, audiosFragment);
             ft.commit();
 
         } else if (id == R.id.nav_gostos) {
-            updateToolbar("Gostos da Sophia");
+            updateToolbar(getResources().getString(R.string.nav_gosto));
             ft = fm.beginTransaction();
             ft.replace(R.id.container, gostoFragment);
             ft.commit();
 
         }
-        
-        
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -238,6 +246,7 @@ public class MainActivity extends AppCompatActivity
 
        toolbar.startAnimation(fadeOut);
     }
+
 
 
 }

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import sophia.br.com.star.R;
 
@@ -14,9 +15,20 @@ import sophia.br.com.star.R;
  */
 
 public class AtividadesFragment extends Fragment {
-
+    RelativeLayout loading;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.atividades_fragment, container, false);
 
+        View view =  inflater.inflate(R.layout.atividades_fragment, container, false);
+            new Thread(new Runnable() {
+                public void run() {
+                    loading.postDelayed(new Runnable() {
+                        public void run() {
+                            loading.setVisibility(View.GONE);
+
+                        }
+                    },2000);
+                }
+            }).start();
+        return  view;
     }
 }
