@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- regime de tributação -->
+    <TextView
+        android:id="@+id/det_subp_card_filho_tributacao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="Regime de tributação"/>
+    <TextView
+        android:id="@+id/det_subp_card_filho_valor_trbutacao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#191919"
+        android:textSize="14sp"
+        android:text="Progressivo"
+        android:layout_alignBaseline="@+id/det_subp_card_filho_tributacao"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:id="@+id/det_subp_card_filho_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/det_subp_card_filho_tributacao"/>
+
+    <!-- inicio de renda -->
+    <TextView
+        android:id="@+id/det_subp_card_filho_renda"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/det_subp_card_filho_divider1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="Início de renda"/>
+    <TextView
+        android:id="@+id/det_subp_card_filho_data_renda"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#191919"
+        android:textSize="14sp"
+        android:text="21/04/2040"
+        android:layout_alignBaseline="@+id/det_subp_card_filho_renda"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:id="@+id/det_subp_card_filho_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/det_subp_card_filho_renda"/>
+
+    <!-- data contratação -->
+    <TextView
+        android:id="@+id/det_subp_card_filho_contratacao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/det_subp_card_filho_divider2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="Data de contratação"/>
+    <TextView
+        android:id="@+id/det_subp_card_filho_data_contratacao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#191919"
+        android:textSize="14sp"
+        android:text="21/04/2011"
+        android:layout_alignBaseline="@+id/det_subp_card_filho_contratacao"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:id="@+id/det_subp_card_filho_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/det_subp_card_filho_contratacao"/>
+
+    <!-- contribuicao mensal -->
+    <TextView
+        android:id="@+id/det_subp_card_filho_contribuicao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/det_subp_card_filho_divider3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="Contribuição mensal"/>
+    <TextView
+        android:id="@+id/det_subp_card_filho_valor_contribuicao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#191919"
+        android:textSize="14sp"
+        android:text="R$ 500,00"
+        android:layout_alignBaseline="@+id/det_subp_card_filho_contribuicao"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:id="@+id/det_subp_card_filho_divider4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/det_subp_card_filho_contribuicao"/>
+
+    <!-- dia da contribuicao -->
+    <TextView
+        android:id="@+id/det_subp_card_filho_dia_contribuicao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/det_subp_card_filho_divider4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="Dia da contribuição"/>
+    <TextView
+        android:id="@+id/det_subp_card_filho_data_contribuicao"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#191919"
+        android:textSize="14sp"
+        android:text="10 de cada mês"
+        android:layout_alignBaseline="@+id/det_subp_card_filho_dia_contribuicao"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:id="@+id/det_subp_card_filho_divider5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/det_subp_card_filho_dia_contribuicao"/>
+
+    <!-- tipo de renda -->
+    <TextView
+        android:id="@+id/det_subp_card_filho_tipo_renda"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/det_subp_card_filho_divider5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="Tipo de renda"/>
+    <TextView
+        android:id="@+id/det_subp_card_filho_tipo_da_renda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/det_subp_card_filho_tipo_renda"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#191919"
+        android:textSize="14sp"
+        android:text="Renda mensal vitalícia reversível ao cônjuge com continuidade aos menores"/>
+    <View
+        android:id="@+id/det_subp_card_filho_divider6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/det_subp_card_filho_tipo_da_renda"/>
+
+    <!-- beneficiários e rateios -->
+    <TextView
+        android:id="@+id/det_subp_card_filho_beneficiarios"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/det_subp_card_filho_divider6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="31dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="Beneficiários e rateios"/>
+    <ListView
+        android:id="@+id/det_subp_card_filho_lista_beneficiarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/det_subp_card_filho_beneficiarios"/>
+
+</RelativeLayout>

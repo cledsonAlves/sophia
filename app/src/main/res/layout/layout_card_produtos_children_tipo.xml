@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/portifolio_produtos_filho_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/portifolio_produtos_filho_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="#787878"
+        android:text="nome"/>
+
+    <TextView
+        android:id="@+id/portifolio_produtos_filho_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginRight="19dp"
+        android:textColor="#191919"
+        android:textSize="14sp"
+        android:text="30"/>
+
+    <View
+        android:id="@+id/portifolio_produtos_filho_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="#f0f0f0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/inv_warm_grey"
+        android:text="Beneficiários e rateios"
+        />
+
+</LinearLayout>

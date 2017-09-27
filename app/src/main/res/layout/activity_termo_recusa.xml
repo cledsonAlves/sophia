@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inv_white_three">
+    <RelativeLayout
+        android:background="@color/inv_white_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/container_termo_recusa"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/inv_white_three"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/inv_white_three"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_header_printable" />
+
+                <TextView
+                    android:id="@+id/termo_recusa_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/inv_black"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/termo_aceite"
+                    />
+
+                <TextView
+                    android:id="@+id/termo_recusa_texto"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@color/inv_warm_grey"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/termo_aceite"
+                    />
+            </LinearLayout>
+
+            </ScrollView>
+
+        <include layout="@layout/layout_header_pequeno" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/inv_white_three"
+        >
+        <Button
+            android:id="@+id/term_btn_compartilhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@color/inv_transparent"
+            android:text="@string/app_compartilhar"
+            android:layout_gravity="bottom"
+            android:textColor="@color/inv_black_two"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_above="@+id/term_btn_compartilhar"
+            android:background="@color/inv_white"
+            />
+        </RelativeLayout>
+</RelativeLayout>

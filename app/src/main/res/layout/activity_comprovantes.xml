@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inv_white_three"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include layout="@layout/layout_header_pequeno" />
+
+        <include layout="@layout/layout_success_green"
+            android:visibility="gone"
+            android:id="@+id/success_green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lista_comprovantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btn_compartilhar_comprovante"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/app_button_red_border_pill"
+                    android:textColor="@color/inv_red"
+                    android:text="@string/app_compartilhar"
+                    android:textAllCaps="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/inv_black"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/label_central_atendimento"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/inv_warm_grey"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/telefone_central_atendimento"
+                        android:layout_marginBottom="30dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/inv_black"
+                        android:lineSpacingExtra="6sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/label_sac" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/inv_warm_grey"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/telefone_sac"
+                        android:layout_marginBottom="30dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:lineSpacingExtra="6sp"
+                        android:textColor="@color/inv_black"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/label_ouvidoria" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/inv_warm_grey"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/telefone_ouvidoria" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_continuar_comprovante"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/app_button_red_white_pill"
+                    android:textColor="@color/inv_white"
+                    android:text="@string/app_continuar"
+                    android:textAllCaps="true"
+                    android:focusable="true"
+                    android:layout_marginBottom="20dp"
+                    android:focusableInTouchMode="true"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

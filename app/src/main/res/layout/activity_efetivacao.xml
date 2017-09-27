@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inv_white_three">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/inv_white_three">
+
+        <include layout="@layout/layout_header_pequeno"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:id="@+id/efetivacao_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="@color/inv_black_two"
+                android:lineSpacingExtra="2sp"
+                android:gravity="center_horizontal"
+                android:text="@string/efe_aguarde"
+                />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="5dp"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/efe_lista_efetivacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <!-- laoding -->
+    <RelativeLayout
+        android:id="@+id/efe_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/inv_white_three">
+        <include layout="@layout/layout_loading_state"/>
+    </RelativeLayout>
+</RelativeLayout>

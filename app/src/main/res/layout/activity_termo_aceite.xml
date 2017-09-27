@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- layout da tela -->
+        <LinearLayout
+            android:id="@+id/termo_aceite_layout_tela"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <!-- include do header -->
+            <include layout="@layout/layout_header_pequeno" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/termo_aceite_lista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout> <!-- fim layout tela -->
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- laoding -->
+    <RelativeLayout
+        android:id="@+id/termo_aceite_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <include layout="@layout/layout_loading_state"/>
+    </RelativeLayout> <!-- fim loading -->
+
+</LinearLayout>

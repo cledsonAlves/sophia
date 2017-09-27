@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/det_subp_card_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View
+                android:id="@+id/det_subp_card_cor_familia"
+                android:layout_width="4dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:background="#70b900" />
+
+            <TextView
+                android:id="@+id/det_subp_card_nome_produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Sophia Alves Camargo\n Peso : 3.780Kg"
+                android:textColor="#191919"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/det_subp_card_numero_certificado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="52dp"
+                android:text="Certificado: 2307725C"
+                android:textColor="#787878"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <!-- primeira linha -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/valor_investido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="95dp"
+                        android:layout_toStartOf="@+id/det_subp_card_valor_investido"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:text="Peso :"
+                        android:textColor="@color/accent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/det_subp_card_valor_investido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/valor_investido"
+                        android:text="R$ 25.000,00"
+                        android:textColor="#191919"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divisao1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#f0f0f0" />
+
+                <!-- segunda linha -->
+                <RelativeLayout
+                    android:id="@+id/det_subp_card_resgate_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/apli_novo_lbl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/apli_novo_vlr2"
+                        android:text="Sexo"
+                        android:textColor="@color/accent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@id/apli_novo_vlr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="R$ 24.876,00"
+                        android:textColor="#191919"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/divisao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#f0f0f0" />
+
+                    <ImageButton
+                        android:id="@+id/card_det_sub_img_detalhe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divisao2"
+                        android:background="@color/primary"
+                        android:paddingBottom="16dp"
+                        android:paddingEnd="13dp"
+                        android:paddingTop="23dp"
+                        android:src="@drawable/ic_menu_share" />
+
+                    <ImageButton
+                        android:id="@+id/card_det_sub_img_detalhe_inver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divisao2"
+                        android:background="@color/primary_light"
+                        android:paddingBottom="22dp"
+                        android:paddingStart="13dp"
+                        android:paddingTop="16dp"
+                        android:rotation="180"
+                        android:src="@drawable/ic_menu_camera"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/card_det_sub_ver_detalhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divisao2"
+                        android:layout_marginStart="20dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:text="PESORSRSSYSYSYSYSYSYS" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/card_det_sub_ver_detalhe_lista"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/card_det_sub_ver_detalhe"
+                        android:onClick="meu"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/card_det_sub_ver_tipo_lista"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/card_det_sub_ver_detalhe_lista"
+                        android:onClick="meu"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/card_det_sub_ver_beneficiario_lista"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/card_det_sub_ver_tipo_lista"
+                        android:onClick="meu"
+                        android:paddingBottom="15dp"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+                    <!-- CELULA COE -->
+                    <LinearLayout
+                        android:id="@+id/ll_container_coe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_det_sub_ver_beneficiario_lista"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:id="@+id/divisao4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#f0f0f0" />
+
+                        <TextView
+                            android:id="@+id/detsub_label_rentabilidade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="LOREM IMPULSEM" />
+
+                        <TextView
+                            android:id="@+id/detsub_value_rentabilidade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/accent" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <View
+                        android:id="@+id/divisao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#f0f0f0" />
+
+                    <LinearLayout
+                        android:id="@+id/card_det_button_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_container_aplicar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/card_det_subp_btn_aplicar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                android:text="LOREM IMPULSEM"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/btn_aplicar_ic_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@id/card_det_subp_btn_aplicar"
+                                android:src="@drawable/ic_menu_camera"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/divisor_botao"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#f0f0f0" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_container_resgatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/card_det_subp_btn_resgatar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                android:text="LOREM IMPULSEM"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/btn_resgatar_ic_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@id/card_det_subp_btn_resgatar"
+                                android:src="@drawable/ic_menu_share"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
