@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -15,6 +16,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,7 +25,12 @@ import android.view.animation.Animation;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.ArrayList;
+import java.util.Map;
 
 import sophia.br.com.star.Adapters.ListaAdapter;
 import sophia.br.com.star.Enties.Pessoa;
@@ -38,6 +45,7 @@ import sophia.br.com.star.Fragments.HomeFragment;
 import sophia.br.com.star.Fragments.LeituraFragment;
 import sophia.br.com.star.Fragments.SaudeFragment;
 import sophia.br.com.star.Fragments.VideosFragment;
+import sophia.br.com.star.Util.LibraryClass;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -61,14 +69,12 @@ public class MainActivity extends AppCompatActivity
     private RelativeLayout loading;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
          toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+      //  setSupportActionBar(toolbar);
 
 
         loading = (RelativeLayout) findViewById(R.id.success_green);
@@ -87,6 +93,7 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
 
     @Override
     public void onBackPressed() {
@@ -209,7 +216,6 @@ public class MainActivity extends AppCompatActivity
         gostoFragment = new GostosFragment();
 
 
-
         fm = getSupportFragmentManager();
 
         // Abre uma transação e adiciona
@@ -246,6 +252,8 @@ public class MainActivity extends AppCompatActivity
 
        toolbar.startAnimation(fadeOut);
     }
+
+
 
 
 

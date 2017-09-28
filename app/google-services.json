@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1017025233641",
+    "firebase_url": "https://api-project-1017025233641.firebaseio.com",
+    "project_id": "api-project-1017025233641",
+    "storage_bucket": "api-project-1017025233641.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017025233641:android:12b6e261e48a57bc",
+        "android_client_info": {
+          "package_name": "sophia.br.com.star"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017025233641-rt8relenvi6rnj97skk3va5vrdma50s0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1017025233641-fn1q3jd7j25dun67i9doqk3np5fci6pd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sophia.br.com.star",
+            "certificate_hash": "1ed11c07eef5c17f622fc12408f31984659b3b82"
+          }
+        },
+        {
+          "client_id": "1017025233641-b1l3vp09i2b3umd561sjhobp5far2foi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY24sFnC0Chnt3yLSUryS3TuktMIRcDA4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017025233641-rt8relenvi6rnj97skk3va5vrdma50s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
