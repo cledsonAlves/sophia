@@ -17,10 +17,10 @@
         android:layout_marginEnd="58dp"
         >
 
-        <ImageView
+        <sophia.br.com.star.Util.ImageRound
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/ic_flower"
+            android:background="@color/accent"
             android:layout_margin="16dp"
             />
 

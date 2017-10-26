@@ -1,14 +1,8 @@
-package sophia.br.com.star;
+package sophia.br.com.star.Activities;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.SystemClock;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,24 +10,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
-import java.util.ArrayList;
-import java.util.Map;
-
-import sophia.br.com.star.Adapters.ListaAdapter;
-import sophia.br.com.star.Enties.Pessoa;
 import sophia.br.com.star.Fragments.AprendizadoFragment;
 import sophia.br.com.star.Fragments.AtividadesFragment;
 import sophia.br.com.star.Fragments.AudiosFragment;
@@ -45,7 +28,7 @@ import sophia.br.com.star.Fragments.HomeFragment;
 import sophia.br.com.star.Fragments.LeituraFragment;
 import sophia.br.com.star.Fragments.SaudeFragment;
 import sophia.br.com.star.Fragments.VideosFragment;
-import sophia.br.com.star.Util.LibraryClass;
+import sophia.br.com.star.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

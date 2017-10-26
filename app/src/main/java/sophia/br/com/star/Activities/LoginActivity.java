@@ -1,4 +1,4 @@
-package sophia.br.com.star;
+package sophia.br.com.star.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import sophia.br.com.star.R;
 
 /**
  * Created by cledson.alves on 28/09/2017.
@@ -37,28 +39,30 @@ public class LoginActivity extends Activity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                initTelaPrincipal();
 
-                mAuth.createUserWithEmailAndPassword("clsddd@hotmail.com","151185")
-                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+              /**      mAuth.createUserWithEmailAndPassword(usuario.getText().toString(), senha.getText().toString())
+                            .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                                public static final String TAG = "nulai";
 
-
-                            public static final String TAG ="nulai" ;
-
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
-
-                                // If sign in fails, display a message to the user. If sign in succeeds
-                                // the auth state listener will be notified and logic to handle the
-                                // signed in user can be handled in the listener.
-                                if (!task.isSuccessful()) {
-                                    Toast.makeText(LoginActivity.this, "Falhou",
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    Toast.makeText(LoginActivity.this, "Usuario criado com sucesso!",
                                             Toast.LENGTH_SHORT).show();
-                                }
 
-                            }
-                        });
+                                    initTelaPrincipal();
+
+                                    Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+                                    if (!task.isSuccessful()) {
+                                        Toast.makeText(LoginActivity.this, "Falhou",
+                                                Toast.LENGTH_SHORT).show();
+
+
+                                    }
+
+                                }
+                            });**/
+
 
             }
         });
@@ -100,6 +104,10 @@ public class LoginActivity extends Activity {
         btn_login = (Button) findViewById(R.id.cadastrar);
         usuario = (EditText) findViewById(R.id.usuario);
         senha = (EditText) findViewById(R.id.senha);
+    }
+
+    private void initTelaPrincipal(){
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
     }
 
 }

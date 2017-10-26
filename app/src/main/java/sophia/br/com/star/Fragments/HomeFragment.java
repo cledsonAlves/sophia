@@ -20,25 +20,11 @@ import sophia.br.com.star.Util.Util;
 public class HomeFragment extends Fragment {
     RelativeLayout loading;
 
+
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view =  inflater.inflate(R.layout.home_fragment, container, false);
-        Util.animateFragment(view);
-        loading = view.findViewById(R.id.success_green);
-
-        new Thread(new Runnable() {
-            public void run() {
-                loading.postDelayed(new Runnable() {
-                    public void run() {
-                        loading.setVisibility(View.GONE);
-
-                    }
-                },2000);
-            }
-        }).start();
-
+        View view = inflater.inflate(R.layout.home_fragment, container, false);
         return view;
-
     }
-
 }

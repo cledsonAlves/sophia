@@ -37,7 +37,6 @@
                 android:layout_marginRight="55dp"
                 android:layout_marginTop="20dp"
                 android:text="Sophia Alves Camargo\n Peso : 3.780Kg"
-                android:textColor="@color/accent"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -54,9 +53,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true">
+                android:orientation="vertical">
 
                 <!-- primeira linha -->
                 <RelativeLayout
@@ -74,7 +73,6 @@
                         android:ellipsize="marquee"
                         android:maxLines="1"
                         android:text="Peso :"
-                        android:textColor="#C2185B"
                         android:textSize="14sp" />
 
                     <TextView
@@ -112,7 +110,6 @@
                         android:layout_marginEnd="10dp"
                         android:layout_toStartOf="@+id/apli_novo_vlr2"
                         android:text="Sexo"
-                        android:textColor="#C2185B"
                         android:textSize="14sp" />
 
                     <TextView
@@ -167,8 +164,8 @@
                         android:layout_marginStart="20dp"
                         android:paddingBottom="15dp"
                         android:paddingTop="15dp"
-                        android:textColor="#C2185B"
-                        android:text="Tipo Sanguineo : O +" />
+                        android:text="Tipo Sanguineo : O +"
+                        android:textColor="#C2185B" />
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/card_det_sub_ver_detalhe_lista"

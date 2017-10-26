@@ -1,4 +1,8 @@
-package sophia.br.com.star.Enties;
+package sophia.br.com.star.Entidades;
+
+import android.widget.ImageView;
+
+import sophia.br.com.star.R;
 
 /**
  * Created by cledson.alves on 31/08/2017.
@@ -8,8 +12,15 @@ public class Pessoa {
     private String nome;
     private String sobrenome;
     private String idade;
+    private int foto;
 
+    public int getFoto() {
+        return foto;
+    }
 
+    public void setFoto(int foto) {
+        this.foto = foto;
+    }
 
     public String getNome() {
         return nome;

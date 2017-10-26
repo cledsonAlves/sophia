@@ -39,10 +39,10 @@
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
-            <ImageView
+            <sophia.br.com.star.Util.ImageRound
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/nome"
                 android:contentDescription="@string/app_name"
                 android:scaleType="centerCrop"
