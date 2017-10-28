@@ -30,31 +30,10 @@ public class AprendizadoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
-        View view =  inflater.inflate(R.layout.aprendizado_fragment, container, false);
+        View view =  inflater.inflate(R.layout.dados_fragment, container, false);
 
         loading = view.findViewById(R.id.success_green);
 
-        /** Circle Chart Display **/
-        cd = (CircleDisplay) view.findViewById(R.id.circleDisplay);
-        cd_ingles = (CircleDisplay) view.findViewById(R.id.cd_ingles);
-        cd_espanhol = (CircleDisplay) view.findViewById(R.id.cd_espanhol);
-        cd_matematica = (CircleDisplay) view.findViewById(R.id.cd_matematica);
-        setAnimation(cd, 86f, Color.MAGENTA,16f);
-        setAnimation(cd_ingles, 85f, Color.YELLOW,10f);
-        setAnimation(cd_espanhol, 78f, Color.RED,10f);
-        setAnimation(cd_matematica, 97f, Color.BLUE,10f);
-
-
-        new Thread(new Runnable() {
-            public void run() {
-                loading.postDelayed(new Runnable() {
-                    public void run() {
-                            loading.setVisibility(View.GONE);
-
-                    }
-                },2000);
-            }
-        }).start();
 
         return view;
 
